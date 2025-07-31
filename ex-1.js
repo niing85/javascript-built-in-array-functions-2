@@ -374,3 +374,12 @@ const bills = [
 ];
 
 // Start coding here
+function totalTransaction(bills){
+  function totals(accumulate,current){
+    return accumulate + current.total;
+  }
+  let result = bills.reduce(totals,0);
+return console.log(result)
+}
+
+totalTransaction(bills);

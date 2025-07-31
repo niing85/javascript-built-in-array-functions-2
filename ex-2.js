@@ -374,5 +374,9 @@ const bills = [
 ];
 
 // Start coding here
+function checkMember(bills){
+  return bills.member !== null;
+}
 
-const newBills;
+const newBills = bills.filter(checkMember);;
+console.log(newBills);

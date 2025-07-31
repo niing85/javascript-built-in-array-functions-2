@@ -374,4 +374,18 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+function verifyMember(bills){
+  return bills.member !== null;
+}
+
+function billMem(bills){
+  return bills.filter(verifyMember);
+}
+
+const billMembers = billMem(bills);
+
+function billMap(billMembers){
+  return billMembers.member.name;
+}
+
+console.log(billMembers.map(billMap))
